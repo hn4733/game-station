@@ -1,0 +1,161 @@
+@import url("https://fonts.googleapis.com/css?family=Bangers&display=swap");
+@import url("https://fonts.googleapis.com/css?family=Roboto&display=swap");
+@import url("https://fonts.googleapis.com/css?family=Staatliches&display=swap");
+
+@font-face {
+	font-family: "bubble";
+	font-style: normal;
+	src: url("../fonts/Bubblegum.ttf");
+}
+
+$roboto-font: "Roboto condensed", sans-serif;
+$bangers-font: "Bangers", cursive;
+$blue: cornflowerblue;
+
+body {
+	margin: 0;
+
+	#main {
+		text-align: center;
+		background-image: url("../img/desert-back-2.png");
+		background-size: cover;
+		background-position: center;
+		background-repeat: no-repeat;
+		padding: 40px 0 25px 0;
+		height: 90vh;
+
+		h1 {
+			font-family: "Staatliches", cursive;
+			font-size: 64px;
+			margin: 0;
+			padding: 30px 0;
+		}
+
+		#game-wrapper {
+			position: relative;
+			display: inline-block;
+
+			// headings
+			h2 {
+				font-family: $bangers-font;
+				color: white;
+				text-shadow: 1px 1px 6px black;
+				letter-spacing: 10px;
+				font-size: 45px;
+			}
+			h3 {
+				font-family: $roboto-font;
+			}
+			h4 {
+				font-family: $bangers-font;
+				color: white;
+				text-shadow: 1px 1px 6px black;
+				letter-spacing: 3px;
+				font-size: 28px;
+			}
+
+			// Game canvas
+			#penpenCanvas {
+				position: relative;
+				border: 1px solid gray;
+				border-radius: 6px;
+			}
+
+			// Introduction screen
+			#overlay-wrapper {
+				position: absolute;
+				content: "";
+				height: 100%;
+				width: 100%;
+				top: 0;
+				right: 0;
+				bottom: 0;
+				left: 0;
+
+				#inside-content {
+					text-align: center;
+					display: flex;
+					justify-content: center;
+					align-items: center;
+					background-image: url("../img/penguin-escape-game-bw.jpg");
+					background-size: cover;
+					background-position: center;
+					background-repeat: no-repeat;
+					border-radius: 6px;
+					border: 1px solid gray;
+					height: 100%;
+					width: 100%;
+				}
+				#button {
+					text-align: center;
+					margin: 0;
+					cursor: pointer;
+					border-radius: 5px;
+					height: 53px;
+					width: 230px;
+					max-width: 100%;
+					background-color: $blue;
+					font-size: 14px;
+					font-weight: 800;
+					text-transform: uppercase;
+					color: white;
+					font-family: $roboto-font;
+					outline: none;
+				}
+				#button:hover {
+					border-color: $blue;
+					background-color: white;
+					color: $blue;
+				}
+
+				#game-over-wrapper {
+					width: 100%;
+					height: 100%;
+					background-color: rgba(0, 0, 0, 0.7);
+					display: flex;
+					justify-content: center;
+					align-items: center;
+					color: white;
+					border-radius: 6px;
+				}
+				#content-wrapper {
+					text-align: center;
+
+					p {
+						font-size: 20px;
+					}
+				}
+			}
+		}
+
+		// notification
+		#notification {
+			font-family: $roboto-font;
+			margin: 20px 0;
+
+			p {
+				font-family: $roboto-font;
+			}
+		}
+	}
+
+	#footer {
+		text-align: center;
+		padding: 10px 0;
+		background-color: #2a2a2a;
+
+		span {
+			color: white;
+
+			a {
+				color: white;
+				text-decoration: none;
+				font-family: $roboto-font;
+
+				&:hover {
+					color: burlywood;
+				}
+			}
+		}
+	}
+}

@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta property="og:title" content="Game Station" />
+		<meta property="og:type" content="website" />
+		<meta
+			name="description"
+			content="Game station features an collection of JavaScript HTML5 canvas games. Built by HN Builds."
+		/>
+		<meta
+			property="og:image"
+			content="https://henrynguyen.design/wp-content/uploads/2019/10/game-station-hnbuilds.jpg"
+		/>
+		<meta property="og:url" content="https://gamestation.hnbuilds.com" />
+		<title>Game Station</title>
+		<link rel="icon" href="./favicon.ico" />
+		<link rel="stylesheet" type="text/css" href="./scss/style.css" />
+	</head>
+	<body>
+		<div id="main">
+			<h1>Game Station</h1>
+			<div id="game-wrapper">
+				<canvas id="penpenCanvas" width="600px" height="400px"></canvas>
+				<div id="score"></div>
+				<div id="overlay-wrapper">
+					<div id="inside-content">
+						<div>
+							<h2>Penguin Escape!</h2>
+							<Button id="button">
+								<p>Click to Start!</p>
+							</Button>
+						</div>
+					</div>
+				</div>
+			</div>
+			<div id="notification"><p>Press the SPACE key to move</p></div>
+		</div>
+		<div id="footer">
+			<span>
+				App created by
+				<a href="https://henrynguyen.design" target="_blank">HN Design</a>
+			</span>
+		</div>
+		<script src="./js/index.js"></script>
+	</body>
+</html>
